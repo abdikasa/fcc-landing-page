@@ -8,18 +8,15 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <div class="main-container">
     <header id="header">
       <nav id="nav-bar">
         <div class="nav-content">
           <img src="logo.svg" alt="" />
           <ul>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Description</a></li>
-            <li><a href="#">Screenshots</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="nav-links">Download</a></li>
+            <li><a href="#" class="nav-links">Video</a></li>
+            <li><a href="#" class="nav-links">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -42,5 +39,41 @@
         </div>
       </div>
     </header>
+    <main>
+      <div class="video flex">
+        <video width="400" id="video" controls>
+          <source src="www.youtube.com/watch?v=3bGNuRtlqAQ" type="video/mp4" ></source>
+        </video>
+        <p>Leon was developed to improve team collaboration and communication while enabling its users to focus on meeting the project's goals. Check out the video for a quick overview of its main features.</p>
+      </div>
+      <div class="contact">
+        <div class="contact-content">
+          <div class="follow-us">
+            <h4>Follow us</h4>
+            <div class="icons">
+              <ul>
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="tumblr.png" alt=""></a></li>
+                <li><a href="#"><img src="dribbble.png" alt=""></a></li>
+                <li><a href="#"><img src="youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="linkedin.png" id="linkedin" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="form-content">
+            <form action="" id="form">
+              <h4>Subscribe to our newsletter</h4>
+              <div class="email-submit">
+                <input type="email" name="email" id="email" placeholder="Your Email">
+                <input type="submit" value="Sign Me Up">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
   </body>
+  <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
 </html>

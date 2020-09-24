@@ -14,8 +14,7 @@ a {
   color: #fff;
 }
 
-html,
-body {
+html, body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -30,12 +29,15 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #nav-bar {
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
   min-height: 10vh;
+  position: sticky;
+  top: 0;
 }
 
 .nav-content {
@@ -60,17 +62,19 @@ header {
 }
 
 #download {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1180px;
   margin: 0 auto;
+  margin-top: -3.5rem;
+  flex-wrap: wrap;
 }
 
 #phone {
   display: flex;
-  flex: 1 1 10rem;
+  flex: 1 1 30rem;
   justify-content: flex-end;
   padding-right: 3rem;
 }
@@ -84,7 +88,7 @@ header {
 #phone-details {
   display: flex;
   justify-content: center;
-  flex: 1 1 5rem;
+  flex: 1 1 30rem;
   flex-direction: column;
   color: #fff;
 }
@@ -107,10 +111,11 @@ header {
   color: #fff;
   padding: 1rem 2rem 1rem 2rem;
   font-size: 1.1rem;
-  border-radius: 8px;
+  border-radius: 15px;
+  margin-right: 1rem;
 }
 
-.buttons button:hover {
+.buttons button:hover, #form-content input[type='submit']:hover {
   background-color: #1a8a6a;
 }
 
@@ -119,4 +124,105 @@ header {
   margin-right: 10px;
   vertical-align: middle;
   margin-top: -4px;
+}
+
+.flex {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video {
+  background-color: #333e50;
+  min-height: 70vh;
+}
+
+video, video+p {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+video+p {
+  color: #fff;
+  font-size: 1.15rem;
+  text-align: center;
+  line-height: 2.2rem;
+  margin: 0 10rem 0 10rem;
+  font-weight: 300;
+}
+
+.contact {
+  color: #333e50;
+  background-color: #e7e1e1;
+}
+
+.contact-content {
+  min-height: 30vh;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.icons img {
+  border: 1px solid #000;
+  padding: 0.35rem;
+  border-radius: 50%;
+}
+
+.icons img:hover {
+  background-color: #27c79a;
+}
+
+#linkedin {
+  border: none;
+  border-radius: 0;
+}
+
+.icons ul {
+  display: flex;
+  justify-content: center;
+}
+
+.icons ul li {
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.follow-us h4, #form-content h4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+}
+
+#form-content, .follow-us {
+  flex: 1 1 30rem;
+  text-align: center;
+}
+
+#form-content {
+  margin-top: -0.8%;
+}
+
+#form-content input[type='email'] {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem 0.8rem 1.5rem;
+  text-align: center;
+  margin-top: 1%;
+}
+
+#form-content input[type='submit'] {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem 0.8rem 1.5rem;
+  text-align: center;
+  margin-top: 1%;
+  background-color: #27c79a;
+  color: #fff;
 }
