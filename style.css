@@ -154,7 +154,7 @@ video+p {
   font-weight: 300;
 }
 
-.contact {
+#contact {
   color: #333e50;
   background-color: #e7e1e1;
 }
@@ -225,4 +225,25 @@ video+p {
   margin-top: 1%;
   background-color: #27c79a;
   color: #fff;
+}
+
+@media (max-width: 976px) {
+  #nav-bar {
+    max-width: 800px;
+  }
+  #download {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -3.5rem;
+    flex-wrap: wrap;
+  }
+  #phone {
+    justify-content: center;
+    margin: 3rem 0 0 3rem;
+  }
 }
